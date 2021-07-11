@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="grid_1">
+    <button type="button" class="btn btn-primary" onclick="play('1')" >1</button>
+    <button type="button" class="btn btn-primary" onclick="play('2')" >2</button>
+    <button type="button" class="btn btn-primary" onclick="play('3')" >3</button>
+    <button type="button" class="btn btn-primary" onclick="play('4')" >4</button>
+    <button type="button" class="btn btn-primary" onclick="play('5')" >5</button>
+    <button type="button" class="btn btn-primary" onclick="play('6')" >6</button>
+    <button type="button" class="btn btn-primary" onclick="play('7')" >7</button>
+    <button type="button" class="btn btn-primary" onclick="play('8')" >8</button>
+    <button type="button" class="btn btn-primary" onclick="play('9')" >9</button>
+    <button type="button" class="btn btn-primary" onclick="play('100')" >100</button>
+    <button type="button" class="btn btn-primary" onclick="play('euros')" >euros</button>
+    <button type="button" class="btn btn-primary" onclick="play('bitcoin')" >bitcoin</button>
+    <button type="button" class="btn btn-primary" onclick="play('dogecoin')" >dogecoin</button>
+    <button type="button" class="btn btn-warning" onclick="stop()" >stop_sound</button>
+</div>
+
+<div class="grid_2">
+    <button type="button" class="btn btn-danger" onclick="play('pourquoi')" >pourquoi</button>
+    <button type="button" class="btn btn-danger" onclick="play('pourquoi_donc')" >pourquoi_donc</button>
+    <button type="button" class="btn btn-danger" onclick="play('ah')" >ah</button>
+    <button type="button" class="btn btn-danger" onclick="play('ah_bon')" >ah_bon</button>
+    <button type="button" class="btn btn-danger" onclick="play('quoi')" >quoi</button>
+    <button type="button" class="btn btn-danger" onclick="play('pas_compris')" >pas_compris</button>
+    <button type="button" class="btn btn-danger" onclick="play('comprends_pas')" >comprends_pas</button>
+    <button type="button" class="btn btn-danger" onclick="play('repetez')" >repetez</button>
+    <button type="button" class="btn btn-danger" onclick="play('je_suis_handicape')" >je_suis_handicapé</button>
+    <button type="button" class="btn btn-danger" onclick="play('appareil_pour_parler')" >appareil_pour_parler</button>
+</div>
+
+<div class="grid_3">
+    <button type="button" class="btn btn-primary" onclick="play('ok')" >ok</button>
+    <button type="button" class="btn btn-primary" onclick="play('oui')" >oui</button>
+    <button type="button" class="btn btn-primary" onclick="play('non')" >non</button>
+    <button type="button" class="btn btn-primary" onclick="play('tres_bien')" >tres_bien</button>
+    <button type="button" class="btn btn-primary" onclick="play('daccord')" >daccord</button>
+    <button type="button" class="btn btn-primary" onclick="play('on_fait_ca')" >on_fait_ca</button>
+    <button type="button" class="btn btn-primary" onclick="play('merci')" >merci</button>
+    <button type="button" class="btn btn-primary" onclick="play('desole')" >desole</button>
+    <button type="button" class="btn btn-primary" onclick="play('pardon')" >pardon</button>
+    <button type="button" class="btn btn-primary" onclick="play('merde')" >merde</button>
+    <button type="button" class="btn btn-primary" onclick="play('fait_chier')" >fait_chier</button>
+    <button type="button" class="btn btn-primary" onclick="play('putain')" >putain</button>
+</div>
+
+<div class="grid_4">
+    <button type="button" class="btn btn-danger" onclick="play('allo')" >allo</button>
+    <button type="button" class="btn btn-danger" onclick="play('bonjour')" >bonjour</button>
+    <button type="button" class="btn btn-danger" onclick="play('je_suis_jacques')" >je_suis_jacques</button>
+    <button type="button" class="btn btn-danger" onclick="play('jappelle_pour')" >jappelle_pour</button>
+    <button type="button" class="btn btn-danger" onclick="play('quelques_questions')" >quelques_questions</button>
+    <button type="button" class="btn btn-danger" onclick="play('autre_question')" >autre_question</button>
+    <button type="button" class="btn btn-danger" onclick="play('petite_question')" >petite_question</button>
+    <button type="button" class="btn btn-danger" onclick="play('demande_kk_chose')" >demande_kk_chose</button>
+</div>
+
+</body>
+
+<script>
+    function play(item){
+            var music = new Audio('mp3_files/' + item + '.mp3');
+            music.play();
+    }
+
+    function stop(){
+        music.pause();
+    }
+</script>
+
+</html>
