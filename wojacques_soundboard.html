@@ -20,13 +20,23 @@
     <button type="button" class="btn btn-primary" onclick="play('7')" >7</button>
     <button type="button" class="btn btn-primary" onclick="play('8')" >8</button>
     <button type="button" class="btn btn-primary" onclick="play('9')" >9</button>
+    <button type="button" class="btn btn-primary" onclick="play('50')" >50</button>
     <button type="button" class="btn btn-primary" onclick="play('100')" >100</button>
     <button type="button" class="btn btn-primary" onclick="play('1000')" >1000</button>
+    <button type="button" class="btn btn-warning" onclick="document.location.reload()" >stop_sound</button>
+    <button type="button" class="btn btn-warning" onclick="play('musique_attente')" >musique_attente</button>
+</div>
+
+<div class="grid_1">
     <button type="button" class="btn btn-primary" onclick="play('euros')" >euros</button>
     <button type="button" class="btn btn-primary" onclick="play('bitcoin')" >bitcoin</button>
     <button type="button" class="btn btn-primary" onclick="play('dogecoin')" >dogecoin</button>
-    <button type="button" class="btn btn-warning" onclick="document.location.reload()" >stop_sound</button>
-    <button type="button" class="btn btn-warning" onclick="play('musique_attente')" >musique_attente</button>
+    <button type="button" class="btn btn-primary" onclick="play('plus')" >plus</button>
+    <button type="button" class="btn btn-primary" onclick="play('moins')" >moins</button>
+    <button type="button" class="btn btn-primary" onclick="play('divisé')" >divisé</button>
+    <button type="button" class="btn btn-primary" onclick="play('par')" >par</button>
+    <button type="button" class="btn btn-primary" onclick="play('pourcent')" >pourcent</button>
+
 </div>
 
 <div class="grid_2">
@@ -44,6 +54,7 @@
 
 <div class="grid_3">
     <button type="button" class="btn btn-primary" onclick="play('ok')" >ok</button>
+    <button type="button" class="btn btn-primary" onclick="play('ok_2')" >ok?</button>
     <button type="button" class="btn btn-primary" onclick="play('oui')" >oui</button>
     <button type="button" class="btn btn-primary" onclick="play('non')" >non</button>
     <button type="button" class="btn btn-primary" onclick="play('tres_bien')" >tres_bien</button>
@@ -53,21 +64,23 @@
     <button type="button" class="btn btn-primary" onclick="play('merci')" >merci</button>
     <button type="button" class="btn btn-primary" onclick="play('desole')" >desole</button>
     <button type="button" class="btn btn-primary" onclick="play('pardon')" >pardon</button>
-    <button type="button" class="btn btn-primary" onclick="play('vous_etes_la')" >vous_etes_la</button>
+    <button type="button" class="btn btn-secondary" onclick="play('vous_etes_la')" >vous_etes_la</button>
     <button type="button" class="btn btn-primary" onclick="play('merde')" >merde</button>
     <button type="button" class="btn btn-primary" onclick="play('fait_chier')" >fait_chier</button>
     <button type="button" class="btn btn-primary" onclick="play('putain')" >putain</button>
+
 </div>
 
 <div class="grid_4">
-    <button type="button" class="btn btn-danger" onclick="play('allo')" >allo</button>
-    <button type="button" class="btn btn-danger" onclick="play('bonjour')" >bonjour</button>
-    <button type="button" class="btn btn-danger" onclick="play('je_suis_jacques')" >je_suis_jacques</button>
-    <button type="button" class="btn btn-danger" onclick="play('jappelle_pour')" >jappelle_pour</button>
-    <button type="button" class="btn btn-danger" onclick="play('quelques_questions')" >quelques_questions</button>
-    <button type="button" class="btn btn-danger" onclick="play('autre_question')" >autre_question</button>
-    <button type="button" class="btn btn-danger" onclick="play('petite_question')" >petite_question</button>
-    <button type="button" class="btn btn-danger" onclick="play('demande_kk_chose')" >demande_kk_chose</button>
+    <button type="button" class="btn btn-primary" onclick="play('allo')" >allo</button>
+    <button type="button" class="btn btn-primary" onclick="play('bonjour')" >bonjour</button>
+    <button type="button" class="btn btn-primary" onclick="play('je_suis_jacques')" >je_suis_jacques</button>
+    <button type="button" class="btn btn-primary" onclick="play('jappelle_pour')" >jappelle_pour</button>
+    <button type="button" class="btn btn-danger" onclick="play('comment_allez')" >comment_allez</button>
+    <button type="button" class="btn btn-secondary" onclick="play('quelques_questions')" >quelques_questions</button>
+    <button type="button" class="btn btn-secondary" onclick="play('autre_question')" >autre_question</button>
+    <button type="button" class="btn btn-secondary" onclick="play('petite_question')" >petite_question</button>
+    <button type="button" class="btn btn-secondary" onclick="play('demande_kk_chose')" >demande_kk_chose</button>
 </div>
 
 <div class="grid_4">
@@ -81,28 +94,46 @@
 </div>
 
 <div class="grid_3">
-    <button type="button" class="btn btn-primary" onclick="play('pourquoi_vendez')" >pourquoi_vendez</button>
-    <button type="button" class="btn btn-primary" onclick="play('baisser_prix')" >baisser_prix</button>
-    <button type="button" class="btn btn-primary" onclick="play('envoi_facture')" >envoi_facture</button>
-    <button type="button" class="btn btn-primary" onclick="play('payer_paypal')" >payer_paypal</button>
-    <button type="button" class="btn btn-primary" onclick="play('payer_cheque')" >payer_cheque</button>
-    <button type="button" class="btn btn-primary" onclick="play('payer_bitcoin')" >payer_bitcoin</button>
-    <button type="button" class="btn btn-primary" onclick="play('payer_dogecoin')" >payer_dogecoin</button>
+    <button type="button" class="btn btn-secondary" onclick="play('pourquoi_vendez')" >pourquoi_vendez</button>
+    <button type="button" class="btn btn-secondary" onclick="play('baisser_prix')" >baisser_prix</button>
+    <button type="button" class="btn btn-secondary" onclick="play('baisser_prix_2')" >baisser_prix_2</button>
+    <button type="button" class="btn btn-secondary" onclick="play('comment_livraison')" >comment_livraison</button>
+    <button type="button" class="btn btn-secondary" onclick="play('envoi_facture')" >envoi_facture</button>
+    <button type="button" class="btn btn-secondary" onclick="play('payer_paypal')" >payer_paypal</button>
+    <button type="button" class="btn btn-secondary" onclick="play('payer_cheque')" >payer_cheque</button>
+    <button type="button" class="btn btn-secondary" onclick="play('payer_bitcoin')" >payer_bitcoin</button>
+    <button type="button" class="btn btn-secondary" onclick="play('payer_dogecoin')" >payer_dogecoin</button>
 </div>
 
 <div class="grid_3">
-    <button type="button" class="btn btn-primary" onclick="play('gros_jeux')" >gros_jeux</button>
-    <button type="button" class="btn btn-primary" onclick="play('jouer_minecraft')" >jouer_minecraft</button>
-    <button type="button" class="btn btn-primary" onclick="play('carte_cool')" >carte_cool</button>
-    <button type="button" class="btn btn-primary" onclick="play('mein_kampf')" >mein_kampf</button>
-    <button type="button" class="btn btn-primary" onclick="play('sparctacus')" >sparctacus</button>
-    <button type="button" class="btn btn-primary" onclick="play('pokemon_gros')" >pokemon_gros</button>
-    <button type="button" class="btn btn-primary" onclick="play('baisser_prix')" >baisser_prix</button>
+    <button type="button" class="btn btn-secondary" onclick="play('jouer_minecraft')" >jouer_minecraft</button>
+    <button type="button" class="btn btn-secondary" onclick="play('mein_kampf')" >mein_kampf</button>
+    <button type="button" class="btn btn-secondary" onclick="play('sparctacus')" >sparctacus</button>
+    <button type="button" class="btn btn-secondary" onclick="play('pokemon_gros')" >pokemon_gros</button>    
+    <button type="button" class="btn btn-secondary" onclick="play('donner_addresse')" >donner_adresse?</button>
+    <button type="button" class="btn btn-secondary" onclick="play('pourquoi_paiement_lbc')" >pourquoi_paiement_lbc</button>
+
 </div>
 
 <div class="grid_4">
-    <button type="button" class="btn btn-danger" onclick="play('envoi_infos')" >envoi_infos</button>
-    <button type="button" class="btn btn-danger" onclick="play('faire_virement')" >faire_virement</button>
+    <button type="button" class="btn btn-primary" onclick="play('addresse')" >addresse</button>
+    <button type="button" class="btn btn-primary" onclick="play('carte_cool')" >carte_cool</button>
+    <button type="button" class="btn btn-primary" onclick="play('gros_jeux')" >gros_jeux</button>
+    <button type="button" class="btn btn-primary" onclick="play('envoi_infos')" >envoi_infos</button>
+    <button type="button" class="btn btn-primary" onclick="play('faire_virement')" >faire_virement</button>
+    <button type="button" class="btn btn-primary" onclick="play('demande_rib')" >demande_rib</button>
+    <button type="button" class="btn btn-primary" onclick="play('ups')" >ups?</button>
+</div>
+
+<div class="grid_4">
+    <button type="button" class="btn btn-danger" onclick="play('bisous')" >bisous</button>
+    <button type="button" class="btn btn-danger" onclick="play('merci_aurevoir')" >merci_aurevoir</button>
+    <button type="button" class="btn btn-danger" onclick="play('ete_coupes')" >ete_coupes</button>
+    <button type="button" class="btn btn-danger" onclick="play('appel_urgent')" >appel_urgent</button>
+</div>
+
+<div class="grid_4">
+    <button type="button" class="btn btn-warning" onclick="play('chien')" >chien</button>
 </div>
 
 </body>
