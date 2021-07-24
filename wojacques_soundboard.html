@@ -167,15 +167,11 @@
 
     function run(){
 
+        console.log(timer);
+
         if (timer == 0){  
             randBlink = Math.floor(Math.random() * cycleLim);
             console.log("randblink : ",randBlink);
-        }
-        
-        if (timer == randBlink|timer == randBlink+1){
-            console.log("blink!");
-            blink();
-            
         }
 
         if(duration>0){
@@ -186,7 +182,6 @@
         timerUpdate(timer);
         console.log(duration);
 
-
         if(duration >0.1){
             speak();
             duration = duration - (interval/1000);
@@ -196,6 +191,11 @@
             stopSpeak();
         }
     
+        if (timer == randBlink|timer == randBlink+1){
+            console.log("blink!");
+            blink();
+            
+        }
         
     }
 
