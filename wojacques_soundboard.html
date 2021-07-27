@@ -14,7 +14,7 @@
     <div class="row mt-2">
         <div class="col-2"></div>
         <div class="col-8 d-flex justify-content-center">
-            <img src="img/logo_normal.png" id="logo" width="300" height="200">
+            <img src="img/logo_normal.png" id="logo" width="180" height="200">
         </div>
         <div class="col-2"></div>
     </div>
@@ -162,6 +162,7 @@
     var randBlink;
     var speakState = 0;
     var duration=0;
+    var closedEyes=0;
 
     setInterval(run, interval);
 
@@ -170,7 +171,7 @@
         console.log(timer);
 
         if (timer == 0){  
-            randBlink = Math.floor(Math.random() * cycleLim);
+            randBlink = Math.floor(Math.random() * (cycleLim-1));
             console.log("randblink : ",randBlink);
         }
 
@@ -211,9 +212,9 @@
     function speak(){
         var doc = document.getElementById("logo");
         var imgs = ['img/logo_normal.png', 'img/logo_speak_1.png', 'img/logo_speak_2.png', 'img/logo_speak_3.png'];
+        closedEyes=0;
         random = Math.floor(Math.random() * imgs.length);
         logo.setAttribute("src", imgs[random]);
-
     }
 
     function stopSpeak(){
@@ -234,10 +235,12 @@
             case i1 :
                 //console.log("i1");
                 doc.setAttribute("src", i2);
+                closedEyes=0;
                 break;
             case i2:
                 //console.log("i2");
                 doc.setAttribute("src", i1);
+                closedEyes=1;
                 break;
         }
     }
