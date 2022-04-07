@@ -1,0 +1,15 @@
+.board {
+    max-width: 825px !important;
+    min-width: 825px !important;
+}
+
+.custombtn {
+    width: 100px;
+    margin-inline: 2px;
+}
+
+.custombtnbig {
+    width: 140px;
+    margin-inline: 2px;
+}
+
