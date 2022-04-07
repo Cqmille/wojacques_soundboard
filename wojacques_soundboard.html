@@ -8,147 +8,130 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark pt-4">
 
-    <div class="row mt-2">
-        <div class="col-2"></div>
-        <div class="col-8 d-flex justify-content-center">
-            <img src="img/logo_normal.png" id="logo" width="180" height="200">
-        </div>
-        <div class="col-2"></div>
+    <div class="d-flex justify-content-center">
+        <img src="img/logo_normal.png" id="logo" width="180" height="200">
     </div>
 
-    <div class="row mt-2">
-
-        <div class="col-2"></div>
-        <div class="col-8">
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('0')">0</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('1')">1</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('2')">2</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('3')">3</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('4')">4</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('5')">5</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('6')">6</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('7')">7</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('8')">8</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('9')">9</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('50')">50</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('100')">100</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('1000')">1000</button>
+    <div class="row mt-1 justify-content-center">
+        <div class="col-8 board">
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('allo')">allo</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('bonjour')">bonjour</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('je_suis_jacques')">je_suis_jacques</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('jappelle_pour')">jappelle_pour</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('comment_allez')">comment_allez</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('ah')">ah</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('ah_bon')">ah_bon</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('quoi')">quoi</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('pourquoi')">pourquoi</button>
             </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('euros')">euros</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('bitcoin')">bitcoin</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('dogecoin')">dogecoin</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('plus')">plus</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('moins')">moins</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('divisé')">divisé</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('par')">par</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('pourcent')">pourcent</button>
-
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pourquoi_donc')">pourquoi_donc</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pas_compris')">pas_compris</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('comprends_pas')">comprends_pas</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('repetez')">repetez</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('vous_etes_la')">vous_etes_la</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('je_suis_handicape')">accident_parapente</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('appareil_pour_parler')">appareil_pour_parler</button>
             </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('ok')">ok</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('ok_2')">ok?</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('oui')">oui</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('non')">non</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('tres_bien')">tres_bien</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('daccord')">daccord</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('on_fait_ca')">on_fait_ca</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('svp')">svp</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('merci')">merci</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('desole')">desole</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('pardon')">pardon</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('merde')">merde</button>
-            </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('ah')">ah</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('ah_bon')">ah_bon</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('quoi')">quoi</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('pourquoi')">pourquoi</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('pourquoi_donc')">pourquoi_donc</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('pas_compris')">pas_compris</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('comprends_pas')">comprends_pas</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('repetez')">repetez</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('vous_etes_la')">vous_etes_la</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('je_suis_handicape')">je_suis_handicapé</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('appareil_pour_parler')">appareil_pour_parler</button>
-            </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('allo')">allo</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('bonjour')">bonjour</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('je_suis_jacques')">je_suis_jacques</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('jappelle_pour')">jappelle_pour</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('comment_allez')">comment_allez</button>
-            </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('attendez')">attendez</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('je_reviens')">je_reviens</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('je_suis_la')">je_suis_la</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('compte_copine')">compte_copine</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('entends_pas')">entends_pas</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('pb_telephone')">pb_telephone</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('grand_pere_appel')">grand_pere_appel</button>
-            </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('quelques_questions')">quelques_questions</button>                <button type="button" class="btn btn-sm btn-secondary" onclick="play('autre_question')">autre_question</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('petite_question')">petite_question</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('demande_kk_chose')">demande_kk_chose</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('pourquoi_vendez')">pourquoi_vendez</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('baisser_prix')">baisser_prix</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('baisser_prix_2')">baisser_prix_2</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('comment_livraison')">comment_livraison</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('envoi_facture')">envoi_facture</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('payer_paypal')">payer_paypal</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('payer_cheque')">payer_cheque</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('payer_bitcoin')">payer_bitcoin</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('payer_dogecoin')">payer_dogecoin</button>
-            </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('jouer_minecraft')">jouer_minecraft</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('mein_kampf')">mein_kampf</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('sparctacus')">sparctacus</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('pokemon_gros')">pokemon_gros</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('donner_addresse')">donner_adresse?</button>
-                <button type="button" class="btn btn-sm btn-secondary" onclick="play('pourquoi_paiement_lbc')">pourquoi_paiement_lbc</button>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('attendez')">attendez</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('je_reviens')">je_reviens</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('je_suis_la')">je_suis_la</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('compte_copine')">compte_copine</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('entends_pas')">entends_pas</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pb_telephone')">pb_telephone</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('grand_pere_appel')">grand_pere_appel</button>
 
             </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('addresse')">addresse</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('carte_cool')">carte_cool</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('gros_jeux')">gros_jeux</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('envoi_infos')">envoi_infos</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('faire_virement')">faire_virement</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('demande_rib')">demande_rib</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="play('ups')">ups?</button>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('0')">0</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('1')">1</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('2')">2</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('3')">3</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('4')">4</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('5')">5</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('6')">6</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('7')">7</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('8')">8</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('9')">9</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('50')">50</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('100')">100</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('1000')">1000</button>
             </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('bisous')">bisous</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('merci_aurevoir')">merci_aurevoir</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('ete_coupes')">ete_coupes</button>
-                <button type="button" class="btn btn-sm btn-danger" onclick="play('appel_urgent')">appel_urgent</button>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('euros')">euros</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('bitcoin')">bitcoin</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('dogecoin')">dogecoin</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('plus')">plus</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('moins')">moins</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('divisé')">divisé</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('par')">par</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('pourcent')">pourcent</button>
             </div>
-
-            <div class="mb-1 d-flex justify-content-between">
-                <button type="button" class="btn btn-sm btn-warning" onclick="play('aboyer')">aboyer</button>
-                <button type="button" class="btn btn-sm btn-warning" onclick="play('slap')">slap</button>
-                <button type="button" class="btn btn-sm btn-warning" onclick="document.location.reload()">stop_sound</button>
-                <button type="button" class="btn btn-sm btn-warning" onclick="play('musique_attente')">musique_attente</button>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('ok')">ok</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('ok_2')">ok?</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('oui')">oui</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('non')">non</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('tres_bien')">tres_bien</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('daccord')">daccord</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('on_fait_ca')">on_fait_ca</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('svp')">svp</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('merci')">merci</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('desole')">desole</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('pardon')">pardon</button>
+                <button type="button" class="btn btn-sm btn-primary custombtn" onclick="play('merde')">zut</button>
             </div>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('quelques_questions')">qq_questions</button>                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('autre_question')">autre_question</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('petite_question')">petite_question</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('demande_kk_chose')">je_me_demande</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pourquoi_vendez')">pourquoi_vendre</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('baisser_prix')">baisser_prix</button>
+            </div>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('baisser_prix_2')">baisser_prix_2</button>
 
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('comment_livraison')">comment_livraison</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('envoi_facture')">envoi_facture</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('payer_paypal')">paypal?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('payer_cheque')">cheque?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('payer_bitcoin')">bitcoin?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('payer_dogecoin')">dogecoin?</button>
+            </div>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('jouer_minecraft')">jouer_minecraft</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('sparctacus')">sparctacus?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pokemon_gros')">pokemon_gros?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('donner_addresse')">donner_adresse?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtnbig" onclick="play('pourquoi_paiement_lbc')">pas_paiement_lbc</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('addresse')">addresse</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('carte_cool')">carte_cool</button>
+            </div>
+            <div class="mb-1 d-flex justify-content-around">
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('gros_jeux')">gros_jeux</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('envoi_infos')">envoi_infos</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('faire_virement')">faire_virement</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('demande_rib')">demande_rib</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('ups')">ups?</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('bisous')">bisous</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('merci_aurevoir')">merci_aurevoir</button>
+                <button type="button" class="btn btn-sm btn-secondary custombtn" onclick="play('ete_coupes')">ete_coupes</button>
+            </div>
+            <div class="mb-1 d-flex justify-content-end">
+                <button type="button" class="btn btn-sm btn-warning custombtnbig" onclick="document.location.reload()">stop</button>
+                <button type="button" class="btn btn-sm btn-warning custombtnbig" onclick="play('musique_attente')">musique_attente</button>
+            </div>
+            <div class="alert alert-warning mt-3" role="alert">
+                <h3>Pourquoi la wojack soundboard ?</h1>
+                <p>Depuis les difficultés d’approvisionnement en semi-conducteurs la demande d’appareils électroniques d’occasion a fortement augmenté. Des objets particulièrement convoités comme les cartes graphiques deviennent difficiles d’accès pourtant il n’est pas rare de croiser des offres particulièrement alléchantes sur les sites de seconde main. Ces annonces cachent en réalité une arnaque où le paiement sur un RIB douteux n’a pour conséquence que le silence radio du vendeur.</p> 
+                <p>Une fois la menace identifiée, la Wojack Soundboard offre une façon ludique de faire perdre du temps au malfaiteur et donc de l’entraver dans sa quête.</p> 
+                <div><p class="m-2">Exemple d'utilisation :</p><iframe width="300" height="60" src="https://vocaroo.com/embed/1ih8Jm6rLMrZ?autoplay=0" frameborder="0" allow="autoplay"></iframe><br><a href="https://voca.ro/1ih8Jm6rLMrZ" title="Enregistreur vocal Vocaroo" target="_blank"></a></div>    
+            </div>
         </div>
-        <div class="col-2"></div>
-
     </div>
 
 </body>
@@ -188,7 +171,6 @@
     
         if (timer == randBlink|timer == randBlink+1){
             blink();
-            
         }
         
     }
